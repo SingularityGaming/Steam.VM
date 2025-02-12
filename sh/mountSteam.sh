@@ -1,6 +1,8 @@
 mntpath=/run/media/me/Singularity
 steamdir=.game/Steam
 
+sudo mkdir -p $mntpath
+
 sudo mount /dev/vdb1 $mntpath
 
 sudo mount --bind $mntpath/$steamdir /var/home/me/.var/app
